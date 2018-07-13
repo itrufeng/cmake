@@ -33,3 +33,23 @@ add_subdirectory(source_dir [binary_dir]
 
 [Reference](https://cmake.org/cmake/help/v3.4/command/add_subdirectory.html) [Example](a_project)
 
+## Install
+
+```cmake
+install(<FILES|PROGRAMS> files... DESTINATION <dir>
+        [PERMISSIONS permissions...]
+        [CONFIGURATIONS [Debug|Release|...]]
+        [COMPONENT <component>]
+        [RENAME <name>] [OPTIONAL])
+```
+
+[Reference](https://cmake.org/cmake/help/v3.4/command/install.html?highlight=install#installing-files) [Example](install_a_project)
+
+### How to uninstall
+
+Because cmake doesn't support uninstall, so that we should use `shell`.
+
+```shell
+xargs rm < install_manifest.txt
+```
+
