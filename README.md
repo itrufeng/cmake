@@ -14,7 +14,7 @@ add_executable(<name> [WIN32] [MACOSX_BUNDLE]
 
 [Reference](https://cmake.org/cmake/help/v3.3/command/add_executable.html) [Example](hellocmake)
 
-## Static library
+## Static library & Dynamic library
 
 ```cmake
 add_library(<name> [STATIC | SHARED | MODULE]
@@ -22,5 +22,5 @@ add_library(<name> [STATIC | SHARED | MODULE]
             source1 [source2 ...])
 ```
 
-[Reference](https://cmake.org/cmake/help/v3.4/command/add_library.html) [Example](make_a_static_library)
+[Reference](https://cmake.org/cmake/help/v3.4/command/add_library.html) [Example for static](make_a_static_library) [Example for dynamic](make_a_dynamic_library)
 
