@@ -62,6 +62,8 @@ tags
 # Persistent undo
 [._]*.un~
 
+# build
+build/
 
 # End of https://www.gitignore.io/api/git,vim,cmake,macos
 
